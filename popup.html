@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Automation Controller</title>
+  <style>
+    body { width: 300px; padding: 15px; font-family: sans-serif; background-color: #f8f9fa; }
+    h3 { margin-top: 0; color: #333; border-bottom: 2px solid #007bff; padding-bottom: 10px; }
+    .section { background: white; padding: 10px; border-radius: 8px; margin-bottom: 15px; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
+    .btn { width: 100%; padding: 10px; margin-top: 5px; cursor: pointer; border: none; border-radius: 5px; font-weight: bold; color: white; }
+    .btn:hover { opacity: 0.9; }
+    .btn-scrape { background-color: #007bff; }
+    .btn-fill { background-color: #28a745; }
+    #status-log { font-size: 11px; color: #666; margin-top: 10px; padding: 8px; background: #e9ecef; border-radius: 4px; min-height: 20px; }
+  </style>
+</head>
+<body>
+  <h3>🤖 Auto-Bot Control</h3>
+  <div class="section">
+    <strong>Step 1: Capture Data</strong>
+    <p style="font-size: 12px; margin: 5px 0;">Open a job/listing page and click below.</p>
+    <button id="btn-scrape" class="btn btn-scrape">📥 Scrape Page</button>
+  </div>
+  <div class="section">
+    <strong>Step 2: Paste Data</strong>
+    <p style="font-size: 12px; margin: 5px 0;">Go to the target form and click below.</p>
+    <button id="btn-fill" class="btn btn-fill">📤 Auto-Fill Form</button>
+  </div>
+  <div id="status-log">System Ready...</div>
+  <script src="popup.js"></script>
+</body>
+</html>
